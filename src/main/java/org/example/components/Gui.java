@@ -597,7 +597,7 @@ public class Gui {
                     return;
                 }
 
-                // Get checked folders
+                // Get checked file extensions
                 Component[] checkBoxesRight = rightDynamicCheckboxPanel.getComponents();
                 ArrayList<String> checkedFileExtensions = new ArrayList<>();
 
@@ -627,8 +627,6 @@ public class Gui {
         // Add the panels to JScrollPanes
         JScrollPane leftScrollPane = createScrollPane(leftPanel, themeDimension);
         JScrollPane rightScrollPane = createScrollPane(rightPanel, themeDimension);
-
-//        JScrollPane foundFoldersScrollPane = createScrollPane(leftDynamicFolderPanel);
 
         // Finalize frame
         mainPanel.add(leftScrollPane);
